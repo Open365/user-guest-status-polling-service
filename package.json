@@ -1,0 +1,33 @@
+{
+  "name": "user-guest-status-polling-service",
+  "version": "0.0.211",
+  "description": "Polling service to control which unresponsive users have vms assigned",
+  "author": "eyeOS",
+  "homepage": "http://www.eyeos.com",
+  "main": "eyeos-user-guest-status-polling-service.js",
+  "dependencies": {
+    "eyeos-mongo": "*",
+    "eyeos-consume-service": "*",
+    "eyeos-http-wrapper": "*",
+    "eyeos-restutils": "*",
+    "eyeos-service-ready-notify": "*",
+    "httptobusserver": "*",
+    "log2out": "*",
+    "eyeos-hooks": "*"
+  },
+  "devDependencies": {
+    "eyeos-gruntfile": "*",
+    "mocha": "1.20.0",
+    "chai": "1.8.0",
+    "sinon": "1.10.3",
+    "grunt": "0.4.5",
+    "grunt-init": "0.2.1",
+    "grunt-shell": "0.7.0",
+    "grunt-mocha-test": "0.11.0"
+  },
+  "microservices": [
+    "mongo.service.consul:27017",
+    "rabbit.service.consul:5672"
+  ],
+  "license": "AGPL-3.0"
+}
