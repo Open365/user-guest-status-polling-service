@@ -1,6 +1,6 @@
 {
   "name": "user-guest-status-polling-service",
-  "version": "0.0.211",
+  "version": "0.0.212",
   "description": "Polling service to control which unresponsive users have vms assigned",
   "author": "eyeOS",
   "homepage": "http://www.eyeos.com",
